@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ADD_CITY_TITLE-->
+        <scene sceneID="R1m-Bb-bOB">
+            <objects>
+                <navigationController storyboardIdentifier="AddCityNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oRm-H4-iZC" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="ADD_CITY_TITLE" image="TabBarCity" id="DV1-er-Ahm" customClass="TabBarItem" customModule="iOSApp" customModuleProvider="target"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="39q-9e-Y9X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="TfK-v7-cu2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="vsT-VE-9wg" kind="relationship" relationship="rootViewController" id="Ezf-aV-Xar"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mi3-Sl-PgF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="-52"/>
+        </scene>
+        <!--Add City View Controller-->
+        <scene sceneID="5X2-A8-pUW">
+            <objects>
+                <viewController storyboardIdentifier="AddCityViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vsT-VE-9wg" customClass="AddCityViewController" customModule="iOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="gQQ-K6-472">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgB-QC-tKZ" customClass="SearchCitySavedCities" customModule="iOSApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p4q-PK-Pep">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="p4q-PK-Pep" secondAttribute="trailing" id="75U-rj-6xA"/>
+                                    <constraint firstAttribute="bottom" secondItem="p4q-PK-Pep" secondAttribute="bottom" id="K9b-CN-n95"/>
+                                    <constraint firstItem="p4q-PK-Pep" firstAttribute="top" secondItem="LgB-QC-tKZ" secondAttribute="top" id="Pem-Zh-KDe"/>
+                                    <constraint firstItem="p4q-PK-Pep" firstAttribute="leading" secondItem="LgB-QC-tKZ" secondAttribute="leading" id="cTc-XN-oyu"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="tableView" destination="p4q-PK-Pep" id="S28-rm-z9S"/>
+                                </connections>
+                            </view>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hn-aU-1aF" customClass="SearchCityResultView" customModule="iOSApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7TD-Rg-CU6">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7TD-Rg-CU6" secondAttribute="bottom" id="bIc-1m-AeH"/>
+                                    <constraint firstItem="7TD-Rg-CU6" firstAttribute="top" secondItem="9hn-aU-1aF" secondAttribute="top" id="e0s-oL-S26"/>
+                                    <constraint firstItem="7TD-Rg-CU6" firstAttribute="leading" secondItem="9hn-aU-1aF" secondAttribute="leading" id="iFc-Ws-Bap"/>
+                                    <constraint firstAttribute="trailing" secondItem="7TD-Rg-CU6" secondAttribute="trailing" id="mrH-ec-pZN"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="tableView" destination="7TD-Rg-CU6" id="4mu-Qx-Lyf"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KHv-Rb-3IZ"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KHv-Rb-3IZ" firstAttribute="bottom" secondItem="9hn-aU-1aF" secondAttribute="bottom" id="1kC-pc-9BV"/>
+                            <constraint firstItem="9hn-aU-1aF" firstAttribute="leading" secondItem="KHv-Rb-3IZ" secondAttribute="leading" id="59h-kb-RqQ"/>
+                            <constraint firstItem="KHv-Rb-3IZ" firstAttribute="trailing" secondItem="9hn-aU-1aF" secondAttribute="trailing" id="AJ2-TH-MwP"/>
+                            <constraint firstItem="KHv-Rb-3IZ" firstAttribute="trailing" secondItem="LgB-QC-tKZ" secondAttribute="trailing" id="Kfb-kc-W7R"/>
+                            <constraint firstItem="KHv-Rb-3IZ" firstAttribute="bottom" secondItem="LgB-QC-tKZ" secondAttribute="bottom" id="Xtf-jg-JBL"/>
+                            <constraint firstItem="9hn-aU-1aF" firstAttribute="top" secondItem="KHv-Rb-3IZ" secondAttribute="top" id="hgY-dr-BGv"/>
+                            <constraint firstItem="LgB-QC-tKZ" firstAttribute="top" secondItem="KHv-Rb-3IZ" secondAttribute="top" id="nzH-Hp-xYE"/>
+                            <constraint firstItem="LgB-QC-tKZ" firstAttribute="leading" secondItem="KHv-Rb-3IZ" secondAttribute="leading" id="p5y-DY-QsJ"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="RRr-93-GRM"/>
+                    <connections>
+                        <outlet property="savedCitiesView" destination="LgB-QC-tKZ" id="kNL-5D-8TU"/>
+                        <outlet property="searchView" destination="9hn-aU-1aF" id="Lyl-0Z-u8N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kop-Px-wAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="-54.422788605697157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TabBarCity" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" colorMatched="YES" initialViewController="Q3u-9Y-OcX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="KaS-NF-bhv">
+            <objects>
+                <viewController id="Q3u-9Y-OcX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z85-Eh-lb6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y4d-cU-Qt4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cwU-8G-EMt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fmp-TD-NEM">
+                                <rect key="frame" x="84.5" y="265.5" width="245" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="245" id="1eP-Ug-Sad"/>
+                                    <constraint firstAttribute="width" constant="245" id="tCg-0S-phn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ClimApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAQ-Qg-hhd">
+                                <rect key="frame" x="118" y="518" width="178.5" height="54"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fmp-TD-NEM" firstAttribute="centerY" secondItem="cwU-8G-EMt" secondAttribute="centerY" constant="-60" id="209-Qr-BWw"/>
+                            <constraint firstItem="fmp-TD-NEM" firstAttribute="centerX" secondItem="cwU-8G-EMt" secondAttribute="centerX" id="S00-mV-7yb"/>
+                            <constraint firstItem="pAQ-Qg-hhd" firstAttribute="centerX" secondItem="cwU-8G-EMt" secondAttribute="centerX" id="jtk-cK-Cni"/>
+                            <constraint firstItem="pAQ-Qg-hhd" firstAttribute="top" secondItem="fmp-TD-NEM" secondAttribute="bottom" constant="7.5" id="mgM-qo-cDx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rds-Xp-p1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60.869565217391312" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppLogo" width="1024" height="1024"/>
+    </resources>
+</document>

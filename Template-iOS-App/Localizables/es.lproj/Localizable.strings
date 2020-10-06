@@ -1,0 +1,33 @@
+
+// MARK: - Common
+COMMON_OK = "Acceptar";
+
+
+// MARK: - Date Formatting
+DATE_FORMATTING_DATE_AND_MONTH = "dd/MM";
+
+
+// MARK: - View Controllers
+
+// MARK: Home
+HOME_TITLE = "Clima";
+HOME_ALERT_MESSAGE_NO_DATA = "Verifique su conexión a Internet.\nOtorgue permisos de ubicación a la aplicación o agregue una ciudad de la que desee saber su clima";
+
+// MARK: Add City
+ADD_CITY_TITLE = "Agregar Ciudad";
+ADD_CITY_SEARCHBAR_PLACEHOLDER = "Buscar Ciudad";
+
+
+// MARK: - Views
+
+// MARK: Empty Data
+EMPTY_DATA_VIEW_REFRESH_BUTTON_TITLE = "Refrescar";
+
+
+// MARK: - Network Manager
+API_ERROR_ALERT_MESSAGE_NO_DATA = "No se recibieron datos";
+API_ERROR_ALERT_MESSAGE_NO_INTERNET_CONNECTION = "No hay conexión a Internet";
+
+
+// MARK: - Location Manager
+LOCATION_MANAGER_ALERT_MESSAGE_DENIED_PERMISSIONS = "Necesita concederle permisos de localización a la aplicación en Configuración y bla bla bla";
