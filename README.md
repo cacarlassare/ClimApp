@@ -1,8 +1,6 @@
-ClimApp
----
+# ClimApp
 
-
-# TO-DO
+## TO-DO
 
 - Separate location permission error messages from connectivity error messages.
 - Unit Testing.
